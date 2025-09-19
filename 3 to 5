@@ -1,0 +1,14 @@
+m = int(input("enter number m : "))
+n = int(input("enter number n : "))
+product = 1
+if m > n:
+    print("0")
+else:
+    for i in range(m, n + 1):
+        if i % 2 == 0:
+            product *= i
+            found_even = True
+    if found_even:
+        print(product)
+    else:
+        print("No even numbers in the given range.")
