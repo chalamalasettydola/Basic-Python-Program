@@ -1,0 +1,9 @@
+m = int(input("enter number m : "))
+n = int(input("enter number n : "))
+s = 0
+if(m>n):
+    print("0")
+elif(m<=n):
+    for i in range(m,n+1):
+        s = s+(i**3)
+    print(s)
